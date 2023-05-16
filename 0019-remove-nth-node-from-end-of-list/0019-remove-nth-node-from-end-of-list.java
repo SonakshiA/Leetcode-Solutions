@@ -25,9 +25,8 @@ class Solution {
         
         int targetFromFront = length - n;
         
-        if (targetFromFront == 0){
+        if (targetFromFront == 0){ // [1,2],  n=2
             current = head.next;
-            //head.next = null;
             head = null;
             return current;
         }
