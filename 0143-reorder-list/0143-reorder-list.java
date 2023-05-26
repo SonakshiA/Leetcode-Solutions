@@ -65,7 +65,7 @@ class Solution {
 
 /*
 
-Divide the list two halves
+Divide the list into two halves
 Reverse the second half list
 
 Let A and B be the two lists.
