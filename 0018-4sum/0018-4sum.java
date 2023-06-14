@@ -1,28 +1,33 @@
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
-         Set<List<Integer>> st = new HashSet<>();
-        
-          for (int i = 0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                Set<Long> hashSet = new HashSet<>(); 
-                for (int k = j + 1; k < nums.length; k++) {
-                    long sum = nums[i] + nums[j]; //to prevent overflow we take long
-                   sum += nums[k];
-                    long fourth = target - sum;
-                    if (hashSet.contains(fourth)) {
+        List<List<Integer>> st = new ArrayList();
+                Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 3; i++) {
+            for (int j = i + 1; j < nums.length - 2; j++) {
+                int k = j + 1;
+                int l = nums.length - 1;
+
+                while (k < l) {
+                    long sum = (long) nums[i] + nums[j] + nums[k] + nums[l];
+                    if (sum == target) {
                         List<Integer> temp = new ArrayList<>();
                         temp.add(nums[i]);
                         temp.add(nums[j]);
                         temp.add(nums[k]);
-                        temp.add((int) fourth);
-                        temp.sort(Integer::compareTo);
-
-                        st.add(temp);
+                        temp.add(nums[l]);
+                        if (!st.contains(temp)) {
+                            st.add(temp);
+                        }
+                        k++;
+                        l--;
+                    } else if (sum < target) {
+                        k++;
+                    } else if (sum > target) {
+                        l--;
                     }
-                    hashSet.add((long) nums[k]);
                 }
             }
         }
-        return new ArrayList<>(st);
+        return st;
     }
 }
