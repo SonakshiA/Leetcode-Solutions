@@ -14,6 +14,7 @@ class Solution {
             }
             
             int[] list = map.get(arr[index]);
+            System.out.println(Arrays.toString(list));
             for(int val: list){
                 if(arr[index]!=val){
                     return false;
@@ -25,3 +26,14 @@ class Solution {
         return true;
     }
 }
+
+//put the number at 0th index of pieces as key and rest of the list as the value
+
+/*
+
+arr = [91,4,64,78], pieces = [[78],[4,64],[91]]
+78 -> [78]
+4 -> [4,64]
+91 -> [91]
+
+*/
