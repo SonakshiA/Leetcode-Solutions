@@ -32,3 +32,5 @@ class Solution {
         return list.get(k-1);
     }
 }
+
+// Intuition: do a preorder traversal and sort the list
