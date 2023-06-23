@@ -17,20 +17,21 @@ class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        q.add(null);
+        q.add(null); //marks end of level
         int found = 0;
         while(!q.isEmpty()){
             TreeNode current = q.poll();
             
             if(current == null){
-                if (!q.isEmpty()) q.add(null);
-                found = 0;
+                if (!q.isEmpty()) q.add(null); //end of other level
+                found = 0; //new level
                 continue;
             }
             
             if (current.left!=null && (current.left.val == x || current.left.val == y)){
                 found ++;
             }
+            
             
             else if (current.right!=null && (current.right.val == x || current.right.val == y)){
                 found ++;
