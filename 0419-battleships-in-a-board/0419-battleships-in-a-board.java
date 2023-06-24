@@ -10,6 +10,7 @@ class Solution {
         int m = board[0].length;
         
         for(int i = 0 ;i<4; i++){
+            //to traverse in four directions around current row and column
             int row = sr + delRow[i];
             int col = sc + delCol[i];
             
@@ -38,3 +39,5 @@ class Solution {
         return ans;
     }
 }
+
+//Use DFS to traverse the board
