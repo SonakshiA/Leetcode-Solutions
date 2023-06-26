@@ -23,7 +23,7 @@ class Solution {
 
 Find the longest subarray having a total of sum-x where sum is the total of all elements of that array
 
-
+Refer: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/discuss/2136570/Change-Your-Perspective-or-JAVA-Explanation
 
 
 */
