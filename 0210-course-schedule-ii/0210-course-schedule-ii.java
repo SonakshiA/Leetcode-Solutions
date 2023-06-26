@@ -8,8 +8,9 @@ class Solution {
             adj.add(new ArrayList<>());
         }
         
+        //making adjacency list
         for(int[] prereq:prerequisites){
-            adj.get(prereq[1]).add(prereq[0]);
+            adj.get(prereq[1]).add(prereq[0]); //  1 <- 0
             indegree[prereq[0]]++;
         }
         
@@ -23,7 +24,7 @@ class Solution {
         int count = 0;
         while(!q.isEmpty()){
             int node = q.poll();
-            q2.add(node);
+            q2.add(node); //add the node to secondary queue to print the element finally
             count++;
             
             for(int it: adj.get(node)){
