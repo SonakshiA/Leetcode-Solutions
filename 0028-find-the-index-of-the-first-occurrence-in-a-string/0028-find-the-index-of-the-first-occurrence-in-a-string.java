@@ -1,6 +1,6 @@
 class Solution {
     public int strStr(String haystack, String needle) {
-         int needleLen = needle.length();
+        int needleLen = needle.length();
         int haystackLen = haystack.length();
 
         if(needleLen>haystackLen){
