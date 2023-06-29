@@ -16,9 +16,9 @@ class Solution {
         boolean bottom = searchNext(board, word, row + 1, col, index + 1, m, n);
         boolean left = searchNext(board, word, row, col - 1, index + 1, m, n);
         boolean right = searchNext(board, word, row, col + 1, index + 1, m, n);
-         
-         board[row][col] = c;
 
+        board[row][col] = c;
+    
         return top || bottom || left || right;
 
     }
