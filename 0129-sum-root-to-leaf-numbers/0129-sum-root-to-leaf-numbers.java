@@ -23,12 +23,13 @@ class Solution {
         sb.append(node.val);
         System.out.println(sb.toString());
         
-        dfs(node.left,sb);
-        dfs(node.right,sb);
         
         if(node.left==null && node.right==null){
              res+=Integer.parseInt(sb.toString());
         }
+        
+        dfs(node.left,sb);
+        dfs(node.right,sb);
         
         sb.deleteCharAt(sb.length()-1);
         System.out.println(sb.toString());
