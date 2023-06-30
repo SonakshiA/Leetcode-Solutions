@@ -6,7 +6,8 @@ class Solution {
             str[i] = String.valueOf(nums[i]);
         }
 
-        Arrays.sort(str, (s1,s2) -> (s2+s1).compareTo(s1+s2)); // not (s1+s2).compareTo(s2+s1)
+        Arrays.sort(str, (s1,s2) -> (s2+s1).compareTo(s1+s2)); // not (s1+s2).compareTo(s2+s1) since we sort in ascending manner
+        System.out.println(Arrays.toString(str));
         
         if(str[0].charAt(0)=='0') return "0";
 
