@@ -24,3 +24,5 @@ class Solution {
         return (costMax<0) ? 0 : costMax;
     }
 }
+
+//KADANES ALGORITHM
