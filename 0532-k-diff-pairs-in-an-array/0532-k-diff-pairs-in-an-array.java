@@ -10,9 +10,9 @@ class Solution {
         for(int num: nums){
             if(map.containsKey(num+k)){
                 if(num+k == num){
-                    if(map.get(num+k)>1){
+                    if(map.get(num+k)>1){  //when k is 0 
                         res++;
-                        map.put(num+k,0);
+                        map.put(num+k,0);  //we've used this pair
                     }
                 }else if (map.get(num+k)>0){
                     res++;
