@@ -10,3 +10,5 @@ class Solution {
         return ans + duration;
     }
 }
+
+//https://leetcode.com/problems/teemo-attacking/discuss/3177550/Java-solution-or-Beginner-or-One-loop
