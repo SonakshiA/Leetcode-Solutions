@@ -27,7 +27,7 @@ class Solution {
         
         if (targetFromFront == 0){ // [1,2],  n=2
             current = head.next;
-            head = null;
+            //head = null;
             return current;
         }
         
