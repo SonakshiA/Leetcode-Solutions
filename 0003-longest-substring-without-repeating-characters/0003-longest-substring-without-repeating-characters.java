@@ -14,7 +14,7 @@ class Solution {
                 j++;
             }
 
-            visited[s.charAt(i)]=0;
+            //visited[s.charAt(i)]=0;
             i++;
         }
         return max;
