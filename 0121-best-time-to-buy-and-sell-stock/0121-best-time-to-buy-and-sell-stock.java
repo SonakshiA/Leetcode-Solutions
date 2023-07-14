@@ -8,6 +8,7 @@ class Solution {
             if (profit > maxProfit) {
                 maxProfit = profit;
             }
+            //buy on a day with lower price
             if (buy > i) {
                 buy = i;
             }
