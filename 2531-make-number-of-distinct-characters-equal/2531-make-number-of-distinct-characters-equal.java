@@ -40,3 +40,6 @@ class Solution {
         return false;
     }
 }
+
+
+//remove ch1 from m1 and ch2 from m2. Add ch1 to m2 and ch2 to m1 and check for uniqueness
