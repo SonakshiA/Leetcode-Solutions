@@ -11,7 +11,7 @@ class Solution {
         }
         
         int l=0;
-        //iterate till we find a character having occurence less than l
+        //iterate till we find a character having occurence less than k
         while(l<n && map[s.charAt(l)-'a']>=k) l++; 
         
         //if entire substring is traversed and all characters are greater than k or the last character has occurence less than k
