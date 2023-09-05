@@ -21,7 +21,7 @@ class Solution {
             path.append(ch);
             backtrack(path,index+1,phoneDigits);
             //delete the last added character to go to previous level of recursion
-            path.deleteCharAt(path.length()-1);
+            path.deleteCharAt(index);
         }
     }
 }
