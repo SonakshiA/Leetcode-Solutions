@@ -14,6 +14,7 @@ class Solution {
 
         //sorting the values based on their abs value without altering the original values
         Arrays.sort(temp, Comparator.comparingInt(Math::abs)); 
+        System.out.println(Arrays.toString(temp)); //[-2, 2, 4, -4]
 
         for (int x : temp) {
             if (map.get(x) == 0) continue;
