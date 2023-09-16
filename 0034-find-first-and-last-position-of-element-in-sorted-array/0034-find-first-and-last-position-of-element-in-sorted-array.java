@@ -1,35 +1,26 @@
 class Solution {
-    public int[] searchRange(int[] nums, int target) {
+    public int[] searchRange(int[] arr, int k) {
         int res[] = {-1,-1};
-        
-        if(nums.length==0){
-            return res;
-        }
-        
-        int front = 0;
-        int back = nums.length-1;
-        
-        while(front<=back){
-            if(nums[front]==target && nums[back]==target){
-                res[0] = front;
-                res[1] = back;
+        if(arr.length==0) return res;
+       int n = arr.length;
+        for(int i=0;i<n;i++){
+            if(arr[i]==k){
+                res[0] = i;
+                
                 break;
             }
-            
-            if(nums[front]==target){
-                res[0] = front;
-            } 
-            else{
-                System.out.println("Here");
-                front++;
-            }
-            
-            if(nums[back]==target){
-                res[1] = back;
-            }else{
-                back--;
+        }  
+        
+     
+
+        for(int i=n-1;i>=0;i--){
+            if(arr[i]==k){
+                res[1] = i;
+                
+                break;
             }
         }
+
         return res;
     }
 }
