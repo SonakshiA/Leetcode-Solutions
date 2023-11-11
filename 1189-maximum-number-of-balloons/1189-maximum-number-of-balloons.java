@@ -1,6 +1,6 @@
 class Solution {
     public int maxNumberOfBalloons(String text) {
-          Map<Character, Integer> m = new HashMap<>();
+         Map<Character, Integer> m = new HashMap<>();
         int min_freq = Integer.MAX_VALUE;
         char[] ballon = {'b','a','l','o','n'};
             
