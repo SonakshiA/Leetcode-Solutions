@@ -14,23 +14,17 @@
  * }
  */
 class Solution {
-    ArrayList<Integer> list = new ArrayList<>();
-    
-    private void preOrder(TreeNode root){
-        if(root!=null){
-            list.add(root.val);
-            preOrder(root.left);
-            preOrder(root.right);
-        }else{
-            return;
+    ArrayList<Integer> vals = new ArrayList<>();
+    public void preOrder(TreeNode node){
+        if(node!=null){
+            vals.add(node.val);
+            preOrder(node.left);
+            preOrder(node.right);
         }
     }
     public int kthSmallest(TreeNode root, int k) {
         preOrder(root);
-        Collections.sort(list);
-        System.out.println(list);
-        return list.get(k-1);
+        Collections.sort(vals);
+        return vals.get(k-1);
     }
 }
-
-// Intuition: do a preorder traversal and sort the list
