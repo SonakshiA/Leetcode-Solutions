@@ -14,21 +14,23 @@
  * }
  */
 class Solution {
-    int diameter = 0;
+    int[] diameter = new int[1];
     public int diameterOfBinaryTree(TreeNode root) {
-        maxDepth(root);
-        
-        return diameter;
+        height(root);
+        return diameter[0];
     }
     
-    private int maxDepth(TreeNode root){
-        if(root==null)
+    private int height(TreeNode node){
+        if(node==null)
             return 0;
+        int lh = height(node.left);
+        int rh = height(node.right);
         
-        int l = maxDepth(root.left);
-        int r = maxDepth(root.right);
-        diameter = Math.max(diameter,l+r);
+        diameter[0] = Math.max(diameter[0],lh+rh);
+        return 1 + Math.max(lh,rh);
         
-        return Math.max(l,r)+1;
     }
 }
+/*
+At each node, calculate the height of the left subtree and right subtree and sum it up
+*/
