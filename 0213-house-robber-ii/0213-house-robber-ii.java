@@ -1,7 +1,6 @@
 class Solution {
-    private int f(int index,int[] nums,int[] dp){
-        if (index==0) return nums[index];
-        
+    int f(int index, int[] nums, int[] dp){
+        if(index==0) return nums[index];
         if(index<0) return 0;
         
         if(dp[index]!=-1) return dp[index];
@@ -12,7 +11,7 @@ class Solution {
         return dp[index] = Math.max(pick,notPick);
     }
     public int rob(int[] nums) {
-        if(nums.length==1) return nums[0];
+        if (nums.length==1) return nums[0];
         int[] dp1 = new int[nums.length];
         int[] dp2 = new int[nums.length];
         
