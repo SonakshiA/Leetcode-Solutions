@@ -1,23 +1,24 @@
 class Solution {
-    public int lengthOfLIS(int[] nums) {
-        int n = nums.length;
-        int[][] dp = new int[n+1][n+1];
+    public int f(int index, int prev, int[] nums, int[][] dp, int n){
+        if(index==n)
+            return 0;
+        if(dp[index][prev+1]!=-1) 
+            return dp[index][prev+1];
         
+        int notTake = 0 + f(index+1,prev,nums,dp,n);
+        int take = 0;
         
-        for(int ind=n-1;ind>=0;ind--){
-            for(int prev_index=ind-1;prev_index>=-1;prev_index--){
-                int notPick = 0 + dp[ind+1][prev_index+1];
-                
-                int pick = 0;
-                
-                 if(prev_index==-1 || nums[ind]>nums[prev_index]){
-                     pick = 1 + dp[ind+1][ind+1];
-                }
-                
-                dp[ind][prev_index+1] = Math.max(pick,notPick);
-            }
+        if(prev==-1 || nums[index]>nums[prev]){
+            take = 1 + f(index+1,index, nums,dp,n);
         }
         
-        return dp[0][0];
+        dp[index][prev+1] = Math.max(take,notTake);
+        return dp[index][prev+1];
+    }
+    public int lengthOfLIS(int[] nums) {
+        int[][] dp = new int[nums.length][nums.length];
+        for(int[] row:dp)
+            Arrays.fill(row,-1);
+        return f(0,-1,nums,dp,nums.length);
     }
 }
