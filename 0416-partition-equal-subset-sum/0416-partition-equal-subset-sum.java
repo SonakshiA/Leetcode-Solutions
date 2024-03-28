@@ -1,34 +1,34 @@
 class Solution {
-    private boolean f(int index, int[] nums, int[][] dp, int target){
+    public boolean solveRec(int index, int[] nums, int target, int[][] dp){
+        if(index==0) return nums[0] == target;
         if(target==0) return true;
-        if(index==0) return (nums[index]==target);
         
-        if(dp[index][target]!=-1) return dp[index][target]==0?false:true;
-        
-        boolean notTaken = f(index-1,nums,dp,target);
-        boolean take = false;
+        if(dp[index][target]!=-1) 
+            return dp[index][target]==0?false:true;
+            
+        boolean notPick = solveRec(index-1,nums,target,dp);
+        boolean pick = false;
         if(nums[index]<=target){
-            take = f(index-1,nums,dp,target-nums[index]);
-            dp[index][target] = take||notTaken?1:0;
+            pick = solveRec(index-1,nums,target - nums[index],dp);
         }
+        dp[index][target] = notPick||pick?1:0;
+        return notPick||pick;
         
-        return notTaken||take;
     }
     public boolean canPartition(int[] nums) {
-        int sum=0;
-        for(int x:nums){
-            sum+=x;
-        }
+        int x=0;
         
-        if(sum%2==1) return false;
+        for(int num:nums)
+            x+=num;
         
-        int target = sum/2;
-        int[][] dp = new int[nums.length][target+1];
+        if(x%2==1) return false;
         
-        for(int row[]:dp){
+        int target = x/2;
+        
+        int dp[][] = new int[nums.length][target+1];
+        for(int[] row:dp)
             Arrays.fill(row,-1);
-        }
-        
-        return f(nums.length-1,nums,dp,target);
+            
+        return solveRec(nums.length-1,nums,target,dp);
     }
 }
