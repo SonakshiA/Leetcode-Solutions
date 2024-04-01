@@ -1,34 +1,34 @@
 class Solution {
-    private boolean isPalindrome(String sub ,int start, int end){
+    public boolean isPalindrome(String sub, int start, int end){
         while(start<=end){
-            if(sub.charAt(start)!=sub.charAt(end))
+            if(sub.charAt(start)!=sub.charAt(end)){
                 return false;
-            start++;
-            end--;
+            }else{
+                start++;
+                end--;
+            }
         }
         return true;
     }
     
-    private void findPalindromes(int index, String s,List<String> path, List<List<String>> res ){
+    public void f(int index, List<String> ds, List<List<String>> res, String s){
         if(index==s.length()){
-            res.add(new ArrayList<>(path));
+            res.add(new ArrayList<>(ds));
             return;
         }
-        
-        for(int i=index; i<s.length();i++){
+        for(int i=index;i<s.length();i++){
             if(isPalindrome(s,index,i)){
-                path.add(s.substring(index,i+1));
-                findPalindromes(i+1,s,path,res);
-                path.remove(path.size()-1);
+                ds.add(s.substring(index,i+1));
+                f(i+1,ds,res,s);
+                System.out.println(ds);
+                ds.remove(ds.size()-1);
             }
         }
     }
-    
     public List<List<String>> partition(String s) {
         List<List<String>> res = new ArrayList<>();
-        List<String> path = new ArrayList<>();
-        findPalindromes(0,s,path,res);
+        List<String> ds = new ArrayList<>();
+        f(0,ds,res,s);
         return res;
-        
     }
 }
