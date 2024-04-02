@@ -5,7 +5,6 @@ class Solution {
     // -----------------------------------------------------------
     Arrays.sort(numbers);
     int len = numbers.length;
-    int result = numbers[len - 1]; 
     int i = 0;
     while (i < len - 2) {
       if (numbers[i] == numbers[i+1]) {
