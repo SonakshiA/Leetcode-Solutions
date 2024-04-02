@@ -1,15 +1,19 @@
-class Solution {
-    public int singleNumber(int[] nums) {
-        HashMap<Integer,Integer> map = new HashMap<>();
-        
-        for(int num:nums){
-            map.put(num,map.getOrDefault(num,0)+1);
-        }
-        
-        for(Integer num: map.keySet()){
-            if(map.get(num)==1)
-                return num;
-        }
-        return 0;
+class Solution { 
+    public int singleNumber(int[] numbers) { 
+    // -----------------------------------------------------------
+    // Sorting -- Time Complexity O(nlogn), Space Complexity O(1)
+    // -----------------------------------------------------------
+    Arrays.sort(numbers);
+    int len = numbers.length;
+    int result = numbers[len - 1]; 
+    int i = 0;
+    while (i < len - 2) {
+      if (numbers[i] == numbers[i+1]) {
+        i = i + 2;
+      } else {
+        return numbers[i];
+      }
     }
+    return numbers[len - 1];
+  }
 }
