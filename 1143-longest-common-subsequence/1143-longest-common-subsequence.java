@@ -1,33 +1,23 @@
 class Solution {
-    private int f(int ind1, int ind2, int[][] dp,String text1, String text2){
-        if(ind1<0 || ind2<0){
+    private int f(String text1, String text2, int i1, int i2, int[][] dp){
+        if(i1<0)
             return 0;
+        if(i2<0)
+            return 0;
+        
+        if(dp[i1][i2]!=-1) return dp[i1][i2];
+        
+        if(text1.charAt(i1)==text2.charAt(i2)){
+            return dp[i1][i2] = 1 + f(text1,text2,i1-1,i2-1,dp);
         }
         
-        if(dp[ind1][ind2]!=-1) return dp[ind1][ind2];
-        
-        if(text1.charAt(ind1)==text2.charAt(ind2)){
-            return 1+f(ind1-1,ind2-1,dp,text1,text2);
-        }
-        
-        return dp[ind1][ind2] = Math.max(f(ind1-1,ind2,dp,text1,text2),f(ind1,ind2-1,dp,text1,text2));
+        return dp[i1][i2] = Math.max(f(text1,text2,i1-1,i2,dp),f(text1,text2,i1,i2-1,dp));
     }
     public int longestCommonSubsequence(String text1, String text2) {
-        int n = text1.length();
-        int m = text2.length();
-        
-        int[][] dp = new int[n][m];
-        
-        for(int[] row:dp){
-            Arrays.fill(row,-1);
+        int[][] dp = new int[text1.length()][text2.length()];
+        for(int[] r:dp){
+            Arrays.fill(r,-1);
         }
-        
-        int res =  f(n-1,m-1,dp,text1,text2);
-        
-        for(int[] row:dp){
-                System.out.println(Arrays.toString(row));
-        }
-        
-        return res;
+        return f(text1,text2,text1.length()-1,text2.length()-1,dp);
     }
 }
