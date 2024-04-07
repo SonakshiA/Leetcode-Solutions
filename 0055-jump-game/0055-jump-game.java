@@ -1,13 +1,13 @@
 class Solution {
     public boolean canJump(int[] nums) {
-        int reach=0;
-        int i=0;
-        for(;i<nums.length && i<=reach;i++){
-                reach=Math.max(i+nums[i],reach);
+        int maxReach = 0;
+        int i = 0;
+        while(i<nums.length && i<=maxReach){ //i<= maxReach so that we do no gp to indices that cannot be reached
+            maxReach = Math.max(maxReach, i+nums[i]);
+            i++;
         }
-        System.out.println(reach);
-        return i==nums.length;
+        if(i==nums.length)
+            return true;
+        return false;
     }
 }
-
-//we keep a track of the maximum we can reach from a given index
