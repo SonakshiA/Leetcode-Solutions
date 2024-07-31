@@ -1,26 +1,26 @@
 class Solution {
-    private void findCombinations(int index, int target, ArrayList<Integer> l, int[] candidates,List<List<Integer>> ans){
-        
-        if(index==candidates.length || target==0){
-            if(target==0){
-                ans.add(new ArrayList<>(l));
-            }
-            return;
-        }
+    public void function(List<List<Integer>> res, int[] candidates, int target, int index, List<Integer> ds){
+       if(index==candidates.length){
+           if(target==0){
+               res.add(new ArrayList<>(ds));
+           }
+           return;
+       }
         
         if(candidates[index]<=target){
-            l.add(candidates[index]);
-            findCombinations(index,target-candidates[index],l,candidates,ans);
-            l.remove(l.size()-1);
+            ds.add(candidates[index]);
+            //index instead of index+1 since same number can be chosen unlimited times
+            function(res,candidates,target-candidates[index],index,ds);
+            ds.remove(ds.size()-1);
         }
-        findCombinations(index+1,target,l,candidates,ans);
+        function(res,candidates,target,index+1,ds);
     }
-    
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> ans = new ArrayList<>();
-        ArrayList<Integer> l = new ArrayList<>();
-        findCombinations(0,target,l,candidates,ans);
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> ds = new ArrayList<>();
+        function(res,candidates,target,0,ds);
         
-        return ans;
+        return res;
+        
     }
 }
