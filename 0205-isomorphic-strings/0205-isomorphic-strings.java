@@ -8,7 +8,7 @@ class Solution {
                 if(map.get(s.charAt(i))!=t.charAt(i))
                     return false;
             }else{
-                if(map.containsValue(t.charAt(i)))
+                if(map.containsValue(t.charAt(i)))//character of t itself is a key
                     return false;
                 map.put(s.charAt(i),t.charAt(i));
             }
