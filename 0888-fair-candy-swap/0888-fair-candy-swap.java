@@ -13,7 +13,7 @@ class Solution {
             sumA+=val;
         }
         
-        int diff = (sumA-sumB)>>1; //divide by 2
+        int diff = (sumA-sumB)/2; //divide by 2
         for(int a: aliceSizes){
             int targetSize = a-diff;
             if(bobCandies.contains(targetSize)){
