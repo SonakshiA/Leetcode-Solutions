@@ -6,8 +6,12 @@ class Solution {
         int m = items.length, n=queries.length;
         
         Arrays.sort(items, (a,b) -> a[0]-b[0]);
+        for(int[] item:items){
+            System.out.println(Arrays.toString(item));
+        }
         
-        int max = 0;
+            int max = 0;
+        
         
         for(int i=0;i<m;i++){
             if(items[i][1]>max){
