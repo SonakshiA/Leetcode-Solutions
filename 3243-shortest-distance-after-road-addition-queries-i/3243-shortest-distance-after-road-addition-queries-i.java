@@ -51,3 +51,26 @@ class Solution {
         return final_ans;
     }
 }
+
+/*
+Initially:
+0 : 1
+1 : 2
+2 : 3
+3 : 4
+
+On adding [2,4]
+0 : 1
+1 : 2
+2 : 3,4
+3 : 4
+
+Make a Queue and do BFS, keep track of the levels
+
+Level 0: We add 0 and do BFS
+Level 1: We add 1 (adjacent of 0) and do BFS
+Level 2: We add 2 (adjacent of 1) and do BFS
+Level 3: We add 3 and 4. Here, we get the n-1 node, so we return 3 (the level number)
+
+Similarly, do for all queries
+*/
