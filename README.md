@@ -28,4 +28,20 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
+## Depth-First Search
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0684-redundant-connection) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0684-redundant-connection) |
+## Union Find
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0684-redundant-connection) |
+## Graph
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0684-redundant-connection) |
 <!---LeetCode Topics End-->
