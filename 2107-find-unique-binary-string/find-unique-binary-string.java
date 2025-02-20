@@ -1,28 +1,20 @@
 class Solution {
-    Set<String> set = new HashSet<>();
-    int n;
-
-    private String generate(String curr){
-        if(curr.length()==n){
-            if(!set.contains(curr)){
-                return curr;
-            }
-            return "";
-        }
-
-        String addZero = generate(curr + "0");
-
-        if(addZero.length()>0){
-            return addZero;
-        }
-
-        return generate(curr + "1");
-    }
     public String findDifferentBinaryString(String[] nums) {
-        n = nums.length;
-        for(String s: nums){
-            set.add(s);
+        Set<Integer> numbers = new HashSet<>();
+        for(String num:nums){
+            numbers.add(Integer.parseInt(num,2));
         }
-        return generate("");
+
+        for(int num=0;num<=nums.length*2+1;num++){
+            if(!numbers.contains(num)){
+                String ans = Integer.toBinaryString(num);
+                while(ans.length()<nums.length){
+                    ans = "0" + ans;
+                }
+                return ans;
+            }
+            //return ans;
+        }
+    return "";
     }
 }
