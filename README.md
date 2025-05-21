@@ -6,6 +6,7 @@ Letcode Solutions in Java
 ## Array
 |  |
 | ------- |
+| [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2358-number-of-ways-to-split-array](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2358-number-of-ways-to-split-array) |
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
@@ -49,4 +50,12 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
+## Hash Table
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
+## Matrix
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
 <!---LeetCode Topics End-->
