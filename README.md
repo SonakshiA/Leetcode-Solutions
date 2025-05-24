@@ -11,6 +11,7 @@ Letcode Solutions in Java
 | [2358-number-of-ways-to-split-array](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2358-number-of-ways-to-split-array) |
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2691-count-vowel-strings-in-ranges) |
+| [3194-find-words-containing-character](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/3194-find-words-containing-character) |
 ## String
 |  |
 | ------- |
@@ -19,6 +20,7 @@ Letcode Solutions in Java
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2691-count-vowel-strings-in-ranges) |
+| [3194-find-words-containing-character](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/3194-find-words-containing-character) |
 ## Prefix Sum
 |  |
 | ------- |
