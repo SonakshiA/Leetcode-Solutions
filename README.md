@@ -60,4 +60,12 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
+## Math
+|  |
+| ------- |
+| [2704-maximum-difference-by-remapping-a-digit](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
+## Greedy
+|  |
+| ------- |
+| [2704-maximum-difference-by-remapping-a-digit](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 <!---LeetCode Topics End-->
