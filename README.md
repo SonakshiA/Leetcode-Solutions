@@ -7,6 +7,7 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2358-number-of-ways-to-split-array](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2358-number-of-ways-to-split-array) |
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
@@ -15,6 +16,7 @@ Letcode Solutions in Java
 ## String
 |  |
 | ------- |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -36,6 +38,7 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [0684-redundant-connection](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0684-redundant-connection) |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -68,4 +71,8 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
+## Trie
+|  |
+| ------- |
+| [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 <!---LeetCode Topics End-->
