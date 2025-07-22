@@ -8,6 +8,7 @@ Letcode Solutions in Java
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1813-maximum-erasure-value](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1813-maximum-erasure-value) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2358-number-of-ways-to-split-array](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2358-number-of-ways-to-split-array) |
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
@@ -60,6 +61,7 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
+| [1813-maximum-erasure-value](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1813-maximum-erasure-value) |
 ## Matrix
 |  |
 | ------- |
@@ -76,4 +78,8 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+## Sliding Window
+|  |
+| ------- |
+| [1813-maximum-erasure-value](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1813-maximum-erasure-value) |
 <!---LeetCode Topics End-->
