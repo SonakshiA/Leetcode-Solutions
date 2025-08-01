@@ -7,6 +7,7 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
+| [0118-pascals-triangle](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0118-pascals-triangle) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1813-maximum-erasure-value](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1813-maximum-erasure-value) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -82,4 +83,8 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [1813-maximum-erasure-value](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1813-maximum-erasure-value) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0118-pascals-triangle](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0118-pascals-triangle) |
 <!---LeetCode Topics End-->
