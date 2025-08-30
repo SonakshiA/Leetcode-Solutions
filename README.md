@@ -16,6 +16,7 @@ Letcode Solutions in Java
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3194-find-words-containing-character](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/3194-find-words-containing-character) |
+| [3251-maximum-area-of-longest-diagonal-rectangle](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/3251-maximum-area-of-longest-diagonal-rectangle) |
 ## String
 |  |
 | ------- |
