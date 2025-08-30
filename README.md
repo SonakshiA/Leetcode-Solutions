@@ -6,6 +6,7 @@ Letcode Solutions in Java
 ## Array
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
 | [0118-pascals-triangle](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0118-pascals-triangle) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
@@ -61,11 +62,13 @@ Letcode Solutions in Java
 ## Hash Table
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
 | [1813-maximum-erasure-value](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1813-maximum-erasure-value) |
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0073-set-matrix-zeroes) |
 ## Math
 |  |
