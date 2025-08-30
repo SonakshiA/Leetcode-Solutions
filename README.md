@@ -91,4 +91,8 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [0118-pascals-triangle](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/0118-pascals-triangle) |
+## Database
+|  |
+| ------- |
+| [1317-monthly-transactions-i](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1317-monthly-transactions-i) |
 <!---LeetCode Topics End-->
