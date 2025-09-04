@@ -75,6 +75,7 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2704-maximum-difference-by-remapping-a-digit) |
+| [3830-find-closest-person](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/3830-find-closest-person) |
 ## Greedy
 |  |
 | ------- |
