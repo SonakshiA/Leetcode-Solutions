@@ -27,6 +27,7 @@ Letcode Solutions in Java
 | [2292-counting-words-with-a-given-prefix](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2465-shifting-letters-ii](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2691-count-vowel-strings-in-ranges) |
+| [2887-sort-vowels-in-a-string](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2887-sort-vowels-in-a-string) |
 | [3194-find-words-containing-character](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/3194-find-words-containing-character) |
 ## Prefix Sum
 |  |
@@ -97,4 +98,8 @@ Letcode Solutions in Java
 | ------- |
 | [1317-monthly-transactions-i](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1317-monthly-transactions-i) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
+## Sorting
+|  |
+| ------- |
+| [2887-sort-vowels-in-a-string](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2887-sort-vowels-in-a-string) |
 <!---LeetCode Topics End-->
