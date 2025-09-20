@@ -97,6 +97,7 @@ Letcode Solutions in Java
 |  |
 | ------- |
 | [1317-monthly-transactions-i](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1317-monthly-transactions-i) |
+| [1664-find-users-with-valid-e-mails](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/1664-find-users-with-valid-e-mails) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/SonakshiA/Leetcode-Solutions/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
 ## Sorting
 |  |
