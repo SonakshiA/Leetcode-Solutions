@@ -5,9 +5,9 @@ class Solution(object):
         :rtype: List[int]
         """
         ans = []
-        nums.sort()
-        minimum = nums[0]
-        maximum = nums[len(nums) - 1]
+        
+        minimum = min(nums)
+        maximum = max(nums)
 
         for i in range(minimum,maximum):
             if i not in nums:
