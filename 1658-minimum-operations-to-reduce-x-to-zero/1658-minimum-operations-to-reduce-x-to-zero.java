@@ -1,29 +1,30 @@
 class Solution {
     public int minOperations(int[] nums, int x) {
-           int sum = 0;
-           for(int n: nums)
-               sum+=n;
+        int sum = 0;
+        for(int num: nums)
+            sum+=num;
 
-           int desiredSum = sum-x; 
-           int maxLen = -1;
-           int currSum = 0;
+        int target = sum - x;
+        int left = 0;
+        int s = 0;
+        int size = -1;
+        int n = nums.length;
 
-          for(int l = 0, r = 0; r<nums.length; r++){
-              currSum += nums[r];
+        for(int right = 0; right < n; right++){
+            s += nums[right];
 
-              while(l<=r && currSum> desiredSum) currSum-=nums[l++];
-              if(currSum == desiredSum) maxLen = Math.max(maxLen, r-l+1);
-          }
+            while(left<=right && s > target) {
+                s -= nums[left++];
+            }
 
-           return maxLen == -1 ? -1 : nums.length-maxLen;
+            if (s == target) {
+                size = Math.max(size, right - left + 1);
+            }
+        }
+        return size != -1 ?  n - size : -1;
     }
 }
 
-/*
-
-Find the longest subarray having a total of sum-x where sum is the total of all elements of that array
-
-Refer: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/discuss/2136570/Change-Your-Perspective-or-JAVA-Explanation
-
-
-*/
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
